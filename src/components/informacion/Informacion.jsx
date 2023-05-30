@@ -5,6 +5,7 @@
 const Informacion = () => {
     return(
         <h1>Información</h1>
+        
     )
 }
 
