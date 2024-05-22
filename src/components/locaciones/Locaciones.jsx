@@ -60,6 +60,8 @@ useEffect(() => {
         <div className="container-fluid mt-8">
         <br/>
         <br/>
+        <br/>
+        <br/>
         <h2 className="font-weight-light" style={{color: "white"}}>Registro de medición de calidad del agua</h2>
         <hr/>        
         <Grid item 
@@ -149,7 +151,7 @@ useEffect(() => {
 <footer >
   <div className="text-center p-3" >
     <br/>
-       <Typography style={{color: "white"}} align="center"> © 2023 Copyright </Typography> 
+       <Typography style={{color: "white"}} align="center"> © 2024 Copyright </Typography> 
     <br/>
   </div>
 </footer>

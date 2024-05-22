@@ -20,7 +20,7 @@ import {
   
     return (
       <>
-        <AppBar position="static" color="transparent" navlinks={navlinks} >
+        <AppBar position="fixed" color="transparent" navlinks={navlinks} >
           <Toolbar>
             <IconButton
               color="primary"
