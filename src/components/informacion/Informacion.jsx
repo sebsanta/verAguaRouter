@@ -4,8 +4,12 @@
 
 const Informacion = () => {
     return(
-        <h1>Información</h1>
-        
+        <div>
+             <br></br>
+             <br></br>
+             <br></br>
+             <h1>Información</h1>
+        </div>
     )
 }
 

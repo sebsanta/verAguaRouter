@@ -13,6 +13,7 @@ import {
   import GpsFixedIcon from '@mui/icons-material/GpsFixed';
   import InvertColorsIcon from '@mui/icons-material/InvertColors';
   import AutoFixHighIcon from '@mui/icons-material/AutoFixHigh';
+  import BarChartIcon from '@mui/icons-material/BarChart';
   
 
   const theme = createTheme({
@@ -35,24 +36,29 @@ import {
       href: "/Locaciones",
       
     },
+    // {
+    //   text: "Tratamiento agua",
+    //   icon: <InvertColorsIcon color="primary" />,
+    //   href: "/Tratamiento",
+    // },
+    // {
+    //     text: "Aparato de medición",
+    //     icon: <AutoFixHighIcon color="primary"/>,
+    //     href: "/Aparato",
+    //   },
     {
-      text: "Tratamiento agua",
-      icon: <InvertColorsIcon color="primary" />,
-      href: "/Tratamiento",
-    },
-    {
-        text: "Aparato de medición",
-        icon: <AutoFixHighIcon color="primary"/>,
-        href: "/Aparato",
+        text: "Gráfico de muestras",
+        icon: <BarChartIcon color="primary"/>,
+        href: "/Graficos",
       },
   ];
   
   const secondaryList = [
   
-    {
-      text: "Información",
-      href: "/Informacion",
-    },
+    // {
+    //   text: "Información",
+    //   href: "/Informacion",
+    // },
     {
       text: "Inicio",
       href: "/",

@@ -10,7 +10,7 @@ import Tratamiento from "./components/tratamiento/Tratamiento";
 import Aparato from "./components/aparato/Aparato";
 import Informacion from "./components/informacion/Informacion";
 import Locaciones from "./components/locaciones/Locaciones";
-
+import Graficos from "./components/grafico/Graficos";
 
 const navlinks = [
   {
@@ -32,6 +32,10 @@ const navlinks = [
   {
       title:"Información",
       path:"/Información"
+  },
+  {
+      title:"Graficos",
+      path:"/Graficos"
   }
 
 ]
@@ -107,7 +111,7 @@ return(
         <Route exact path="/aparato" element={<Aparato/>}> </Route>
         <Route exact path="/informacion" element={<Informacion/>}></Route>
         <Route exact path="/locaciones" element={<Locaciones/>}></Route>
-        
+        <Route exact path="/graficos" element={<Graficos/>}></Route>
       </Routes>
   </Container>
 )

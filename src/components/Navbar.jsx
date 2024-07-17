@@ -6,6 +6,7 @@ import {
     IconButton,
     Toolbar,
     Typography,
+    Stack
   } from "@mui/material";
   import { Link } from 'react-router-dom';
   
@@ -38,8 +39,10 @@ import {
             >
               Inicio
             </Typography>
-            <Button color="primary" href="/informacion">Información</Button>
-            <Button color="primary" href="/login">Login</Button>
+            <Stack direction="row" spacing={2} >
+                <Button color="primary" variant="contained" href="/locaciones">Locaciones</Button>
+                <Button color="primary" variant="contained" href="/graficos">Gráfico</Button>
+            </Stack>
           </Toolbar>
         </AppBar>
   

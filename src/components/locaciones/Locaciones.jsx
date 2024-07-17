@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { collection, getDocs, query, doc, getDoc, addDoc, deleteDoc, updateDoc, setDoc, where, QuerySnapshot } from "firebase/firestore";
 import { db } from '../../firebase';
+//import { bd } from '../../firebasemig';
 import {Typography, Grid } from "@mui/material"
 
 
@@ -73,7 +74,7 @@ useEffect(() => {
         <TableHead>
           <TableRow>
             <StyledTableCell>Región</StyledTableCell>
-            <StyledTableCell align="right"></StyledTableCell>
+            <StyledTableCell align="left"></StyledTableCell>
             <StyledTableCell align="left">Comuna</StyledTableCell>
             <StyledTableCell align="left">Dirección</StyledTableCell>
             <StyledTableCell align="left">Descripción</StyledTableCell>
@@ -81,16 +82,29 @@ useEffect(() => {
             <StyledTableCell align="left">Fecha toma</StyledTableCell>
           </TableRow>
         </TableHead>
-        <TableBody>
+        {/* <TableBody>
           {tar.map((item, index) => (
             <StyledTableRow key={index}>
-              <StyledTableCell align="right">{item.region}</StyledTableCell>
+              <StyledTableCell align="left">{item.region}</StyledTableCell>
               <StyledTableCell align="left">{item.comuna}</StyledTableCell>
               <StyledTableCell align="left">{item.name}</StyledTableCell>
               <StyledTableCell align="left">{item.adress}</StyledTableCell>
               <StyledTableCell align="left">{item.description}</StyledTableCell>
               <StyledTableCell align="left">{item.ppm}</StyledTableCell>
-              <StyledTableCell align="left">{new Date(item.createAt.seconds * 1000).toLocaleDateString("en-US")}</StyledTableCell>
+              <StyledTableCell align="left">{new Date(item.createAt.seconds * 1000).toDateString("en-US")}</StyledTableCell>
+            </StyledTableRow>
+          ))}
+        </TableBody> */}
+        <TableBody>
+          {tar.map((item, index) => (
+            <StyledTableRow key={index}>
+              <StyledTableCell align="left">{item.region}</StyledTableCell>
+              <StyledTableCell align="left">{item.name}</StyledTableCell>
+              <StyledTableCell align="left">{item.comuna}</StyledTableCell>
+              <StyledTableCell align="left">{item.direccion}</StyledTableCell>
+              <StyledTableCell align="left">{item.descripcion}</StyledTableCell>
+              <StyledTableCell align="left">{item.ppm}</StyledTableCell>
+              <StyledTableCell align="left">{new Date(item.createdAt.seconds * 1000).toDateString("en-US")}</StyledTableCell>
             </StyledTableRow>
           ))}
         </TableBody>
