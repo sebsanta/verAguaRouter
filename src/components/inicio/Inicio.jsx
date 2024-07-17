@@ -76,7 +76,7 @@ export default function Inicio() {
         component="img"
         alt="green iguana"
         height="300"
-        image="src/assets/Expo.png"
+        image="image/Expo.png"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
@@ -100,7 +100,7 @@ export default function Inicio() {
         <CardMedia
              component="img"
              height="194"
-             image="src/assets/maps.jpeg"
+             image="dist/image/maps.jpeg"
              alt="Toma de muestras"
           />
       </CardContent>
@@ -190,7 +190,7 @@ export default function Inicio() {
           <CardMedia
              component="img"
              height="194"
-             image="src/assets/muestra_agua.jpeg"
+             image="public/image/muestra_agua.jpeg"
              alt="Toma de muestras"
           />
           <br></br>
