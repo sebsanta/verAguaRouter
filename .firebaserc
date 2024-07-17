@@ -1,5 +1,9 @@
 {
   "projects": {
-    "default": "medidor-agua-b5a83"
-  }
+    "default": "medidor-agua-b5a83",
+    "3tdslabs": "tdslabs-af5b8"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
 }
