@@ -76,7 +76,7 @@ export default function Inicio() {
         component="img"
         alt="green iguana"
         height="300"
-        image="dist/assets/Expo.png"
+        image="src/assets/Expo.png"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
@@ -100,7 +100,7 @@ export default function Inicio() {
         <CardMedia
              component="img"
              height="194"
-             image="dist/assets/maps.jpeg"
+             image="src/assets/maps.jpeg"
              alt="Toma de muestras"
           />
       </CardContent>
@@ -150,7 +150,7 @@ export default function Inicio() {
       <CardMedia
         component="img"
         height="194"
-        image="dist/assets/muestra_agua.jpeg"
+        image="src/assets/muestra_agua3.jpeg"
         alt="Toma de muestras"
       />
       <CardContent>
@@ -190,7 +190,7 @@ export default function Inicio() {
           <CardMedia
              component="img"
              height="194"
-             image="dist/assets/muestra_agua.jpeg"
+             image="src/assets/muestra_agua.jpeg"
              alt="Toma de muestras"
           />
           <br></br>
@@ -202,7 +202,7 @@ export default function Inicio() {
           <CardMedia
              component="img"
              height="680"
-             image="dist/assets/crear_perfil.jpeg"
+             image="src/assets/crear_perfil.jpeg"
              alt="Toma de muestras"
           />
           <br></br>
@@ -215,14 +215,14 @@ export default function Inicio() {
           <CardMedia
              component="img"
              height="680"
-             image="dist/assets/crear_muestra.jpeg"
+             image="src/assets/crear_muestra.jpeg"
              alt="Toma de muestras"
           />
           <br></br>
            <CardMedia
              component="img"
              height="680"
-             image="dist/assets/gps.jpeg"
+             image="src/assets/gps.jpeg"
              alt="Toma de muestras"
           />
            <br></br>
@@ -235,7 +235,7 @@ export default function Inicio() {
            <CardMedia
              component="img"
              height="680"
-             image="dist/assets/listado_muestras.jpeg"
+             image="src/assets/listado_muestras.jpeg"
              alt="Toma de muestras"
           />
         </CardContent>
@@ -256,7 +256,7 @@ export default function Inicio() {
       <CardMedia
         component="img"
         height="194"
-        image="dist/assets/tds3.jpeg"
+        image="src/assets/tds1.png"
         alt="Toma de muestras"
       />
       <CardContent>
@@ -296,7 +296,7 @@ export default function Inicio() {
           <CardMedia
              component="img"
              height="300"
-             image="dist/assets/tds5.jpeg"
+             image="src/assets/tds5.jpeg"
              alt="Toma de muestras"
           />
           <br></br>
@@ -310,7 +310,7 @@ export default function Inicio() {
           <CardMedia
              component="img"
              height="300"
-             image="dist/assets/tds1.jpeg"
+             image="src/assets/tds3.png"
              alt="Toma de muestras"
           />
           <br></br>
@@ -324,7 +324,7 @@ export default function Inicio() {
           <CardMedia
              component="img"
              height="360"
-             image="dist/assets/tds2.jpeg"
+             image="src/assets/tds2.png"
              alt="Toma de muestras"
           />
           <br></br>
@@ -346,7 +346,7 @@ export default function Inicio() {
       <CardMedia
         component="img"
         height="194"
-        image="dist/assets/expo.png"
+        image="src/assets/expo.png"
         alt="Toma de muestras"
       />
       <CardContent>
@@ -387,7 +387,7 @@ export default function Inicio() {
           <CardMedia
              component="img"
              height="200"
-             image="dist/assets/Firebase_Log2.jpg"
+             image="src/assets/Firebase_Log2.jpg"
              alt="Toma de muestras"
           />
           <br></br>
@@ -401,7 +401,7 @@ export default function Inicio() {
           <CardMedia
              component="img"
              height="190"
-             image="dist/assets/material_ui.png"
+             image="src/assets/material_ui.png"
              alt="Toma de muestras"
           />
           <br></br>
@@ -415,7 +415,7 @@ export default function Inicio() {
           <CardMedia
              component="img"
              height="700"
-             image="dist/assets/gps.jpeg"
+             image="src/assets/gps.jpeg"
              alt="Toma de muestras"
           />
           <br></br>
@@ -440,43 +440,43 @@ export default function Inicio() {
 
 const itemData = [
     {
-      img: 'dist/assets/listado_muestras.jpeg',
+      img: 'src/assets/listado_muestras.jpeg',
       title: 'Breakfast',
     },
     {
-      img: 'dist/assets/crear_muestra.jpeg',
+      img: 'src/assets/crear_muestra.jpeg',
       title: 'Burger',
     },
     {
-      img: 'dist/assets/gps.jpeg',
+      img: 'src/assets/gps.jpeg',
       title: 'Camera',
     },
     {
-      img: 'dist/assets/crear_perfil.jpeg',
+      img: 'src/assets/crear_perfil.jpeg',
       title: 'Hats',
     },
     {
-        img: 'dist/assets/crear_muestra2.jpeg',
+        img: 'src/assets/crear_muestra2.jpeg',
         title: '0',
       },
     {
-        img: 'dist/assets/muestra_agua.jpeg',
+        img: 'src/assets/muestra_agua.jpeg',
         title: 'Coffee',
     },
     {
-        img: 'dist/assets/muestra_agua2.jpeg',
+        img: 'src/assets/muestra_agua2.jpeg',
         title: '1',
     },
     {
-        img: 'dist/assets/muestra_agua3.jpeg',
+        img: 'src/assets/muestra_agua3.jpeg',
         title: '2',
     },
     {
-        img: 'dist/assets/muestra_agua5.jpeg',
+        img: 'src/assets/muestra_agua4.jpeg',
         title: '3',
     },
     {
-        img: 'dist/assets/muestra_agua6.jpeg',
+        img: 'src/assets/muestra_agua5.jpeg',
         title: '4',
     },
   ];
