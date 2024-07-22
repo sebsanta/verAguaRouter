@@ -37,11 +37,12 @@ import {
               sx={{ flexGrow: 2 }}
               color='white'
             >
-              Inicio
+              Menú
             </Typography>
-            <Stack direction="row" spacing={2} >
-                <Button color="primary" variant="contained" href="/locaciones">Locaciones</Button>
-                <Button color="primary" variant="contained" href="/graficos">Gráfico</Button>
+            <Stack direction="row" spacing={1} >
+                <Button color="success"  variant="outlined" href="/" size="small">Inicio</Button>
+                <Button color="primary" variant="contained" href="/locaciones" size="small">Locaciones</Button>
+                <Button color="primary" variant="contained" href="/graficos" size="small">Gráfico</Button>
             </Stack>
           </Toolbar>
         </AppBar>

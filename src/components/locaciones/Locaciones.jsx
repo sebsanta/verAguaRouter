@@ -110,6 +110,9 @@ useEffect(() => {
         </TableBody>
       </Table>
     </TableContainer>
+    <br></br>
+    <br></br>
+    <br></br>
     </Grid>
   
 
@@ -161,14 +164,6 @@ useEffect(() => {
         </table>
       </div>
     </div>  */}
-
-<footer >
-  <div className="text-center p-3" >
-    <br/>
-       <Typography style={{color: "white"}} align="center"> © 2024 Copyright </Typography> 
-    <br/>
-  </div>
-</footer>
   </div>
     )
 }

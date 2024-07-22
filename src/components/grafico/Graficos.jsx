@@ -115,7 +115,7 @@ const Graficos = () => {
                 <Label value="Región y comuna de toma de muestras" offset={-20} position="insideBottom" stroke="#6DA6DF" />
                 
             </XAxis> 
-            <YAxis type="number" label={{ value: 'PPM por muestra', angle: -90, position: 'insideLeft', stroke:"#6DA6DF" }} domain={[0,1100]} allowDataOverflow/>
+            <YAxis type="number" label={{ value: 'PPM Muestra', angle: -90, position: 'insideLeft', stroke:"#6DA6DF" }} domain={[0,1100]} allowDataOverflow/>
             <Tooltip />
             <Legend verticalAlign="top" height={36} />
             <Line name="Comuna" type="monotone" dataKey="comuna" stroke="#E1600C" activeDot={{r: 10}} >
@@ -143,17 +143,16 @@ const Graficos = () => {
         >
         <CartesianGrid strokeDasharray="3 3"/>
             <XAxis name="Comuna" dataKey="comuna" height={30} domain={[0,100]} allowDataOverflow includeHidden>
-                <Label value="Comuna de toma de muestras" offset={-20} position="insideBottom" stroke="#6DA6DF"/>
+                <Label value="Comuna muestras" offset={-20} position="insideBottom" stroke="#6DA6DF"/>
             </XAxis> 
-            <YAxis type='number' label={{ value: 'PPM por muestra', angle: -90, position: 'insideLeft', stroke:"#6DA6DF" }} domain={[0,1200]} allowDataOverflow />
+            <YAxis type='number' label={{ value: 'PPM Muestra', angle: -90, position: 'insideLeft', stroke:"#6DA6DF" }} domain={[0,1200]} allowDataOverflow />
             <Tooltip />
             <Legend verticalAlign="top" height={36} />
-            <Line name="" type="monotone" dataKey="comuna" stroke="#E1600C" activeDot={{r: 10}} >
+            <Line name="Comuna" type="monotone" dataKey="comuna" stroke="#E1600C" activeDot={{r: 10}} >
             </Line>
             <Line name="PPM" type="monotone" dataKey="ppm" stroke="#6DA6DF" />
-            <Line name="Dirección-Calle" type="monotone" dataKey="direccion" stroke="#6DA6DF" />
-            <Line name="Descripción" type="monotone" dataKey="descripcion" stroke="#6DA6DF" />
-
+            <Line name="Dirección" type="monotone" dataKey="direccion" stroke="#6DA6DF" />
+            <Line name="Desc" type="monotone" dataKey="descripcion" stroke="#6DA6DF" />
         </LineChart>
     </ResponsiveContainer>
 
@@ -177,17 +176,16 @@ const Graficos = () => {
         >
         <CartesianGrid strokeDasharray="3 3"/>
             <XAxis name="Comuna" dataKey="comuna" height={30} domain={[0,100]} allowDataOverflow includeHidden>
-                <Label value="Comuna de toma de muestras" offset={-20} position="insideBottom" stroke="#6DA6DF"/>
+                <Label value="Comuna muestras" offset={-20} position="insideBottom" stroke="#6DA6DF"/>
             </XAxis> 
-            <YAxis type='number' label={{ value: 'PPM por muestra', angle: -90, position: 'insideLeft', stroke:"#6DA6DF" }} domain={[0,150]} allowDataOverflow />
+            <YAxis type='number' label={{ value: 'PPM Muestra', angle: -90, position: 'insideLeft', stroke:"#6DA6DF" }} domain={[0,150]} allowDataOverflow />
             <Tooltip />
             <Legend verticalAlign="top" height={36} />
-            <Line name="" type="monotone" dataKey="comuna" stroke="#E1600C" activeDot={{r: 10}} >
+            <Line name="Comuna" type="monotone" dataKey="comuna" stroke="#E1600C" activeDot={{r: 10}} >
             </Line>
             <Line name="PPM" type="monotone" dataKey="ppm" stroke="#6DA6DF" />
-            <Line name="Dirección-Calle" type="monotone" dataKey="direccion" stroke="#6DA6DF" />
-            <Line name="Descripción" type="monotone" dataKey="descripcion" stroke="#6DA6DF" />
-
+            <Line name="Dirección" type="monotone" dataKey="direccion" stroke="#6DA6DF" />
+            <Line name="Desc" type="monotone" dataKey="descripcion" stroke="#6DA6DF" />
         </LineChart>
     </ResponsiveContainer>
 
@@ -212,29 +210,22 @@ const Graficos = () => {
         >
         <CartesianGrid strokeDasharray="3 3"/>
             <XAxis name="Comuna" dataKey="comuna" height={30} domain={[0,100]} allowDataOverflow includeHidden>
-                <Label value="Comuna de toma de muestras" offset={-20} position="insideBottom" stroke="#6DA6DF"/>
+                <Label value="Comuna muestras" offset={-20} position="insideBottom" stroke="#6DA6DF"/>
             </XAxis> 
-            <YAxis type='number' label={{ value: 'PPM por muestra', angle: -90, position: 'insideLeft', stroke:"#6DA6DF" }} domain={[0,450]} allowDataOverflow />
+            <YAxis type='number' label={{ value: 'PPM Muestra', angle: -90, position: 'insideLeft', stroke:"#6DA6DF" }} domain={[0,450]} allowDataOverflow />
             <Tooltip />
             <Legend verticalAlign="top" height={36} />
-            <Line name="" type="monotone" dataKey="comuna" stroke="#E1600C" activeDot={{r: 10}} >
+            <Line name="Comuna" type="monotone" dataKey="comuna" stroke="#E1600C" activeDot={{r: 10}} >
             </Line>
             <Line name="PPM" type="monotone" dataKey="ppm" stroke="#6DA6DF" />
-            <Line name="Dirección-Calle" type="monotone" dataKey="direccion" stroke="#6DA6DF" />
-            <Line name="Descripción" type="monotone" dataKey="descripcion" stroke="#6DA6DF" />
-
+            <Line name="Dirección" type="monotone" dataKey="direccion" stroke="#6DA6DF" />
+            <Line name="Desc" type="monotone" dataKey="descripcion" stroke="#6DA6DF" />
         </LineChart>
     </ResponsiveContainer>
     <br></br>
     <br></br>
     <br></br>
-    <footer >
-  <div className="text-center p-3" >
-    <br/>
-       <Typography style={{color: "white"}} align="center"> © 2024 Copyright </Typography> 
-    <br/>
-  </div>
-  </footer>
+    <br></br>
     </div>
   )
 }

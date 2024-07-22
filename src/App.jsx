@@ -11,6 +11,7 @@ import Aparato from "./components/aparato/Aparato";
 import Informacion from "./components/informacion/Informacion";
 import Locaciones from "./components/locaciones/Locaciones";
 import Graficos from "./components/grafico/Graficos";
+import Footer from "./components/footer/Footer";
 
 const navlinks = [
   {
@@ -44,6 +45,7 @@ const App = () => {
 
   const [open, setOpen] = useState(false);
 return(
+  <div>
   <Container>
     <Navbar navLinks={navlinks}></Navbar>
     <Drawer
@@ -54,55 +56,6 @@ return(
     <NavListDrawer onClick={() => setOpen(false)} />
     </Drawer>
     <Grid container spacing={4}>
-        {/* <Grid
-          item
-          xs={12}
-          sm={6}
-          md={4}
-        >
-          <p style={{color: 'white'}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-            when an unknown printer took a galley of type and scrambled it to make a type 
-            specimen book. It has survived not only five centuries, but also the leap into 
-            electronic typesetting, remaining essentially unchanged. It was popularised in 
-            the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-            and more recently with desktop publishing software like Aldus PageMaker including 
-            versions of Lorem Ipsum.</p>
-          </Grid>
-          <Grid
-          item
-          xs={12}
-          sm={6}
-          md={4}
-          >
-          <p style={{color:"white"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-            when an unknown printer took a galley of type and scrambled it to make a type 
-            specimen book. It has survived not only five centuries, but also the leap into 
-            electronic typesetting, remaining essentially unchanged. It was popularised in 
-            the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-            and more recently with desktop publishing software like Aldus PageMaker including 
-            versions of Lorem Ipsum.</p>
-          </Grid>
-          <Grid
-          item
-          xs={12}
-          sm={6}
-          md={4}
-          >
-          <p style={{color:'white'}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-            when an unknown printer took a galley of type and scrambled it to make a type 
-            specimen book. It has survived not only five centuries, but also the leap into 
-            electronic typesetting, remaining essentially unchanged. It was popularised in 
-            the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-            and more recently with desktop publishing software like Aldus PageMaker including 
-            versions of Lorem Ipsum.</p>
-          </Grid> */}
-        {/* <Typography variant="h1" color="primary">Hola mundo</Typography>
-        <Typography variant="h4" color="secondary" >secundario</Typography>
-        <Button variant="contained" color="primary">Botón</Button>
-        <Button variant="contained" color="success" startIcon={<AddAPhotoIcon/>}>Add Photo</Button> */}
       </Grid>
       <Routes>
         <Route exact path="/" element={<Inicio/>}> </Route>
@@ -113,7 +66,11 @@ return(
         <Route exact path="/locaciones" element={<Locaciones/>}></Route>
         <Route exact path="/graficos" element={<Graficos/>}></Route>
       </Routes>
+      
   </Container>
+  <Footer />
+  </div>
+  
 )
 }
 

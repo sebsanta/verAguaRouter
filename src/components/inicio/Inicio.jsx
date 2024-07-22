@@ -1,5 +1,15 @@
 import * as React from "react";
 import CssBaseline from '@mui/material/CssBaseline';
+import { MDBCarousel, 
+        MDBCarouselItem, 
+        MDBCarouselCaption,
+        MDBCard,
+        MDBCardTitle,
+        MDBCardText,
+        MDBCardBody,
+        MDBCardImage,
+        MDBRow,
+        MDBCol } from 'mdb-react-ui-kit';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Divider from '@mui/material/Divider';
@@ -48,9 +58,18 @@ const Item = styled(Paper)(({ theme }) => ({
 export default function Inicio() {
 
     const [expanded, setExpanded] = React.useState(false);
+    const [expanded1, setExpanded1] = React.useState(false);
+    const [expanded2, setExpanded2] = React.useState(false);
+
 
     const handleExpandClick = () => {
       setExpanded(!expanded);
+    };
+    const handleExpandClick1 = () => {
+      setExpanded1(!expanded1);
+    };
+    const handleExpandClick2 = () => {
+      setExpanded2(!expanded2);
     };
 
     return (
@@ -60,23 +79,78 @@ export default function Inicio() {
             <br></br>
             <br></br>
             <br></br>
-            <br></br>
-            <Container>
-      <Typography variant="h1" color="white"  gutterBottom>
-        # Proyecto de trazabilidad de calidad de aguas.
+  <Container>
+      <Typography variant="h3" color="white"  gutterBottom>
+        # Proyecto de trazabilidad de toma de muestras.
       </Typography>
       </Container>
+  <hr className="hr hr-blurry" />
   <br></br>
+  <Container>
+  <MDBCarousel showIndicators showControls fade>
+      <MDBCarouselItem itemId={1}>
+        <img src='https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg' className='d-block w-100' alt='...' />
+        <MDBCarouselCaption>
+          <h5>Toma de muestras de agua.</h5>
+          <p>Con el uso de la App puedes georeferenciar y capturar el proceso de toma de muestras.</p>
+        </MDBCarouselCaption>
+      </MDBCarouselItem>
+      <MDBCarouselItem itemId={2}>
+        <img src='https://mdbootstrap.com/img/Photos/Slides/img%20(22).jpg' className='d-block w-100' alt='...' />
+        <MDBCarouselCaption>
+          <h5>Aplicación diseñada para Android e iOS.</h5>
+          <p>Aplicación diseñada en React-Native utilizando Expo y sus componentes basados en JavaScript</p>
+        </MDBCarouselCaption>
+      </MDBCarouselItem>
+      <MDBCarouselItem itemId={3}>
+        <img src='https://mdbootstrap.com/img/Photos/Slides/img%20(23).jpg' className='d-block w-100' alt='...' />
+        <MDBCarouselCaption>
+          <h5>Se pude tomar muestras en cualquier lugar con tu dispositivo móvil</h5>
+          <p>Aplicación diseñada para tomar muestras, georeferenciarlas y agregar descripción con fotografía.</p>
+        </MDBCarouselCaption>
+      </MDBCarouselItem>
+    </MDBCarousel>
+    </Container>
+    <br></br>
   <br></br>
-
+  <hr className="hr hr-blurry" />
+<Container>
+      <section class="text-center">
+        <div className="row">
+          <div className="col-lg-4 col-md-6 mb-5 mb-md-5 mb-lg-0 position-relative">
+            <i className="fas fa-pen-alt fa-3x text-primary mb-4"></i>
+            <h4 className="text-primary fw-bold mb-3">50+ lecturas</h4>
+            <h6 className="fw-normal mb-0 text-secondary">Lecturas TDS de calidad del agua</h6>
+            <div className="vr vr-blurry position-absolute my-0 h-100 d-none d-md-block top-0 end-0"></div>
+          </div>
+          <div className="col-lg-4 col-md-6 mb-5 mb-md-5 mb-lg-0 position-relative">
+            <i className="fas fa-chart-line fa-3x text-primary mb-4"></i>
+            <h4 className="text-primary fw-bold mb-3">Gráficos</h4>
+            <h6 className="fw-normal mb-0 text-secondary">Gráficos de toma de muestras por región</h6>
+            <div className="vr vr-blurry position-absolute my-0 h-100 d-none d-md-block top-0 end-0"></div>
+          </div>
+          <div className="col-lg-4 col-md-6 mb-5 mb-md-0 position-relative">
+            <i className="fas fa-image fa-3x text-primary mb-4"></i>
+            <h4 className="text-primary fw-bold mb-3">100+</h4>
+            <h6 className="fw-normal mb-0 text-secondary">Imágenes de la toma de muestras</h6>
+            {/* <div className="vr vr-blurry position-absolute my-0 h-100 d-none d-md-block top-0 end-0"></div> */}
+          </div>
+          {/* <div className="col-lg-3 col-md-6 mb-5 mb-md-0 position-relative">
+            <i className="fas fa-plug fa-3x text-primary mb-4"></i>
+            <h5 className="text-primary fw-bold mb-3">28</h5>
+            <h6 className="fw-normal mb-0">Plugins</h6>
+          </div> */}
+        </div>
+      </section>
+</Container>
  <CssBaseline />
     <Container maxWidth=""  className="container-fluid mt-8" >
-    <Card sx={{ maxWidth: 1200 }}>
+    {/* <Card sx={{ maxWidth: 1200 }}>
       <CardMedia
         component="img"
         alt="green iguana"
         height="300"
-        image="image/Expo.png"
+        image="https://paulogalarza.com/wp-content/uploads/2024/01/Expo.png"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
@@ -100,16 +174,33 @@ export default function Inicio() {
         <CardMedia
              component="img"
              height="194"
-             image="dist/image/maps.jpeg"
+             image="src/assets//maps.jpeg"
              alt="Toma de muestras"
           />
       </CardContent>
-      <CardActions>
-      </CardActions>
-    </Card>
+    </Card> */}
+    <hr className="hr hr-blurry" />
     <br></br>
-    <br></br>
-    <Typography variant="h4" color="white"  gutterBottom>
+<Container>
+      <MDBCard className='mb-3'>
+      <MDBCardImage position='top' src='https://firebasestorage.googleapis.com/v0/b/lab-seeds.appspot.com/o/imagenes%2Fapp_image.jpeg?alt=media&token=3ae05813-46cb-4da8-a359-48083007763e' alt='...' />
+        <MDBCardBody>
+        <hr className="hr hr-blurry" />
+        <br></br>
+          <MDBCardTitle>Imágenes de la aplicación con lecturas TDS</MDBCardTitle>
+          <MDBCardText>
+            Esta apicación permite generar un formulario con la información de la muestra, 
+            con la geolocalización de la muestra tomada e imágenes que acompañan la evidencia de la toma de muestra.
+          </MDBCardText>
+          <MDBCardText>
+            <small className='text-muted'>Imágenes de la aplicación realizada con Expo</small>
+          </MDBCardText>
+        </MDBCardBody>
+      </MDBCard>
+</Container>
+
+    <hr className="hr hr-blurry" />
+    {/* <Typography variant="h4" color="white"  gutterBottom>
         # Imágenes de aplicación con lecturas de lápiz TDS.
       </Typography>
     <ImageList sx={{ width: "maxWidth", height:950, marginBottom:-25 }} cols={5} rowHeight={200} >
@@ -123,7 +214,7 @@ export default function Inicio() {
           />
         </ImageListItem>
       ))}
-    </ImageList>
+    </ImageList> */}
     </Container>
    <div>
   <div>
@@ -135,9 +226,9 @@ export default function Inicio() {
       <br></br>
       </Container>
   <Container>
-    <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-    <Grid item xs={4}>
-    <Card sx={{ maxWidth: 345 }}>
+    <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 3, md: 3 }}>
+    <Grid item sm={4}>
+    <Card sm={{ maxWidth: 345 }}>
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: grey[500] }} aria-label="recipe">
@@ -150,7 +241,7 @@ export default function Inicio() {
       <CardMedia
         component="img"
         height="194"
-        image="src/assets/muestra_agua3.jpeg"
+        image="https://firebasestorage.googleapis.com/v0/b/lab-seeds.appspot.com/o/imagenes%2Fcrear_muestra.jpeg?alt=media&token=6eb90156-6830-4879-9693-0948bf70581d"
         alt="Toma de muestras"
       />
       <CardContent>
@@ -189,8 +280,8 @@ export default function Inicio() {
           <br></br>
           <CardMedia
              component="img"
-             height="194"
-             image="public/image/muestra_agua.jpeg"
+             height="196"
+             image="https://firebasestorage.googleapis.com/v0/b/lab-seeds.appspot.com/o/imagenes%2Fmuestra_agua2.jpeg?alt=media&token=99c7a14f-ed88-46cb-995b-8849287cdc69"
              alt="Toma de muestras"
           />
           <br></br>
@@ -202,7 +293,7 @@ export default function Inicio() {
           <CardMedia
              component="img"
              height="680"
-             image="src/assets/crear_perfil.jpeg"
+             image="https://firebasestorage.googleapis.com/v0/b/lab-seeds.appspot.com/o/imagenes%2Fcrear_perfil.jpeg?alt=media&token=99157615-fb39-42fc-9261-016a5c16c8b8"
              alt="Toma de muestras"
           />
           <br></br>
@@ -215,14 +306,14 @@ export default function Inicio() {
           <CardMedia
              component="img"
              height="680"
-             image="src/assets/crear_muestra.jpeg"
+             image="https://firebasestorage.googleapis.com/v0/b/lab-seeds.appspot.com/o/imagenes%2Fcrear_muestra2.jpeg?alt=media&token=6b3b3869-34d1-4d65-9ca4-981c741e4d56"
              alt="Toma de muestras"
           />
           <br></br>
            <CardMedia
              component="img"
              height="680"
-             image="src/assets/gps.jpeg"
+             image="https://firebasestorage.googleapis.com/v0/b/lab-seeds.appspot.com/o/imagenes%2Fgps.jpeg?alt=media&token=7001bec2-f710-4b30-abc3-442fdb441dd8"
              alt="Toma de muestras"
           />
            <br></br>
@@ -235,15 +326,15 @@ export default function Inicio() {
            <CardMedia
              component="img"
              height="680"
-             image="src/assets/listado_muestras.jpeg"
+             image="https://firebasestorage.googleapis.com/v0/b/lab-seeds.appspot.com/o/imagenes%2Flistado_muestras.jpeg?alt=media&token=13ae4bd6-8a97-492f-9d12-0d985d3c2223"
              alt="Toma de muestras"
           />
         </CardContent>
       </Collapse>
     </Card>
   </Grid>
-  <Grid item xs={4}>
-  <Card sx={{ maxWidth: 345 }}>
+  <Grid item sm={4}>
+  <Card sm={{ maxWidth: 345 }}>
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: grey[500] }} aria-label="recipe">
@@ -256,7 +347,7 @@ export default function Inicio() {
       <CardMedia
         component="img"
         height="194"
-        image="src/assets/tds1.png"
+        image="https://firebasestorage.googleapis.com/v0/b/lab-seeds.appspot.com/o/imagenes%2Ftds1.png?alt=media&token=cbb7dcf8-738d-4451-8b8d-e556288fdcf6"
         alt="Toma de muestras"
       />
       <CardContent>
@@ -270,15 +361,15 @@ export default function Inicio() {
       </CardContent>
       <CardActions disableSpacing>
         <ExpandMore
-          expand={expanded}
-          onClick={handleExpandClick}
-          aria-expanded={expanded}
+          expand={expanded1}
+          onClick={handleExpandClick1}
+          aria-expanded={expanded1}
           aria-label="show more"
         >
           <ExpandMoreIcon />
         </ExpandMore>
       </CardActions>
-      <Collapse in={expanded} timeout="auto" unmountOnExit>
+      <Collapse in={expanded1} timeout="auto" unmountOnExit>
         <CardContent>
           <Typography paragraph>Dispositivos:</Typography>
           <Typography paragraph>
@@ -296,7 +387,7 @@ export default function Inicio() {
           <CardMedia
              component="img"
              height="300"
-             image="src/assets/tds5.jpeg"
+             image="https://firebasestorage.googleapis.com/v0/b/lab-seeds.appspot.com/o/imagenes%2Ftds5.jpeg?alt=media&token=6ef5aa5f-516a-46b6-badb-05aa63348cce"
              alt="Toma de muestras"
           />
           <br></br>
@@ -310,7 +401,7 @@ export default function Inicio() {
           <CardMedia
              component="img"
              height="300"
-             image="src/assets/tds3.png"
+             image="https://firebasestorage.googleapis.com/v0/b/lab-seeds.appspot.com/o/imagenes%2Ftds3.png?alt=media&token=9321549c-7134-4d7a-812b-e405af651b86"
              alt="Toma de muestras"
           />
           <br></br>
@@ -324,7 +415,7 @@ export default function Inicio() {
           <CardMedia
              component="img"
              height="360"
-             image="src/assets/tds2.png"
+             image="https://firebasestorage.googleapis.com/v0/b/lab-seeds.appspot.com/o/imagenes%2Ftds2.png?alt=media&token=403f4bf5-aa54-4c17-bfdc-a54e1b790d6b"
              alt="Toma de muestras"
           />
           <br></br>
@@ -332,8 +423,8 @@ export default function Inicio() {
       </Collapse>
     </Card>
   </Grid>
-  <Grid item xs={4}>
-  <Card sx={{ maxWidth: 345 }}>
+  <Grid item sm={4}>
+  <Card sm={{ maxWidth: 350 }}>
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: grey[500] }} aria-label="recipe">
@@ -346,7 +437,7 @@ export default function Inicio() {
       <CardMedia
         component="img"
         height="194"
-        image="src/assets/expo.png"
+        image="https://firebasestorage.googleapis.com/v0/b/lab-seeds.appspot.com/o/imagenes%2FExpo.png?alt=media&token=cd07143c-8616-49dd-a7e1-a01667a22e1f"
         alt="Toma de muestras"
       />
       <CardContent>
@@ -360,15 +451,15 @@ export default function Inicio() {
       </CardContent>
       <CardActions disableSpacing>
         <ExpandMore
-          expand={expanded}
-          onClick={handleExpandClick}
-          aria-expanded={expanded}
+          expand={expanded2}
+          onClick={handleExpandClick2}
+          aria-expanded={expanded2}
           aria-label="show more"
         >
           <ExpandMoreIcon />
         </ExpandMore>
       </CardActions>
-      <Collapse in={expanded} timeout="auto" unmountOnExit>
+      <Collapse in={expanded2} timeout="auto" unmountOnExit>
         <CardContent>
           <Typography paragraph>Desarrollo:</Typography>
           <Typography paragraph>
@@ -387,7 +478,7 @@ export default function Inicio() {
           <CardMedia
              component="img"
              height="200"
-             image="src/assets/Firebase_Log2.jpg"
+             image="https://firebasestorage.googleapis.com/v0/b/lab-seeds.appspot.com/o/imagenes%2FFirebase_Log2.jpg?alt=media&token=35e29dd3-3764-4a51-84e9-7d8df6dc88bc"
              alt="Toma de muestras"
           />
           <br></br>
@@ -401,7 +492,7 @@ export default function Inicio() {
           <CardMedia
              component="img"
              height="190"
-             image="src/assets/material_ui.png"
+             image="https://firebasestorage.googleapis.com/v0/b/lab-seeds.appspot.com/o/imagenes%2Fmaterial_ui.png?alt=media&token=e53aa7c3-5d8e-4132-9434-56f729272004"
              alt="Toma de muestras"
           />
           <br></br>
@@ -414,8 +505,8 @@ export default function Inicio() {
           <br></br>
           <CardMedia
              component="img"
-             height="700"
-             image="src/assets/gps.jpeg"
+             height="800"
+             image="https://firebasestorage.googleapis.com/v0/b/lab-seeds.appspot.com/o/imagenes%2Fgps.jpeg?alt=media&token=7001bec2-f710-4b30-abc3-442fdb441dd8"
              alt="Toma de muestras"
           />
           <br></br>
@@ -424,16 +515,14 @@ export default function Inicio() {
     </Card>
   </Grid>
 </Grid>
+<br></br>
+<br></br>
+<br></br>
+
 </Container>
   </div>
     </div>
-    <footer >
-  <div className="text-center p-3" >
-    <br/>
-       <Typography style={{color: "white"}} align="center"> © 2024 Copyright </Typography> 
-    <br/>
-  </div>
-</footer>
+
  </div>
     )
 }
