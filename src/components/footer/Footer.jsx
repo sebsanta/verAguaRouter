@@ -37,13 +37,17 @@ const Footer = () => {
         <MDBContainer className='text-center text-md-start mt-5'>
           <MDBRow className='mt-3'>
             <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
+                <div>
+                <img src="https://firebasestorage.googleapis.com/v0/b/lab-seeds.appspot.com/o/imagenes%2Flogo.png?alt=media&token=6133f755-c220-4710-a258-7e3cd8c330b2"></img>
+                </div>
+                <br></br>
               <h6 className='text-uppercase fw-bold mb-4'>
                 <MDBIcon icon="gem" className="me-3" />
                 3TDSLabs
               </h6>
               <p>
                 Somos  una empresa de investigación e ingeniería que se dedica a experimentar
-                con tecnología y realizar la trazabilidad georeferencial de la toma de muestras.
+                con tecnología y realizar la trazabilidad georeferencial de toma de muestras.
               </p>
             </MDBCol>
 

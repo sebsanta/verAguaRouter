@@ -72,6 +72,8 @@ export default function Inicio() {
       setExpanded2(!expanded2);
     };
 
+    //https://firebasestorage.googleapis.com/v0/b/lab-seeds.appspot.com/o/imagenes%2Flogo.png?alt=media&token=6133f755-c220-4710-a258-7e3cd8c330b2
+
     return (
         <div>
             <br></br>
@@ -80,10 +82,18 @@ export default function Inicio() {
             <br></br>
             <br></br>
   <Container>
-      <Typography variant="h3" color="white"  gutterBottom>
+  <div className="d-flex flex-wrap align-items-center justify-content-center gap-4 mt-4">
+    <img src= 'https://firebasestorage.googleapis.com/v0/b/lab-seeds.appspot.com/o/imagenes%2Flogo.png?alt=media&token=6133f755-c220-4710-a258-7e3cd8c330b2' />
+  </div>
+  </Container>
+ 
+    <div className="d-flex flex-wrap align-items-center justify-content-center gap-4 mt-4">
+  <Container>
+      <Typography variant="h3" color="white"  gutterBottom className="d-flex flex-wrap align-items-center justify-content-center gap-4 mt-4">
         # Proyecto de trazabilidad de toma de muestras.
       </Typography>
-      </Container>
+   </Container>
+   </div>
   <hr className="hr hr-blurry" />
   <br></br>
   <Container>
@@ -113,6 +123,8 @@ export default function Inicio() {
     </Container>
     <br></br>
   <br></br>
+  <br></br>
+            <br></br>
   <hr className="hr hr-blurry" />
 <Container>
       <section class="text-center">
@@ -143,6 +155,7 @@ export default function Inicio() {
         </div>
       </section>
 </Container>
+
  <CssBaseline />
     <Container maxWidth=""  className="container-fluid mt-8" >
     {/* <Card sx={{ maxWidth: 1200 }}>
@@ -179,7 +192,10 @@ export default function Inicio() {
           />
       </CardContent>
     </Card> */}
+  
     <hr className="hr hr-blurry" />
+    <br></br>
+    <br></br>
     <br></br>
 <Container>
       <MDBCard className='mb-3'>
@@ -220,9 +236,10 @@ export default function Inicio() {
   <div>
     <Container>
     <br></br>
-    <Typography variant="h4" color="white"  gutterBottom paragraph>
+    <Typography variant="h4" color="white"  gutterBottom paragraph className="d-flex flex-wrap align-items-center justify-content-center gap-4 mt-4">
         # Proceso de toma de muestras y dispositivos utilizados.
     </Typography>
+      <br></br>
       <br></br>
       </Container>
   <Container>
